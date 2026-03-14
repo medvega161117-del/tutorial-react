@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Tutorial de React</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Tutorial de React</h1>
+<p>Guía paso a paso para crear una aplicación con React</p>
+</header>
+
+<nav>
+<a href="#introduccion">Introducción</a>
+<a href="#objetivo">Objetivo</a>
+<a href="#justificacion">Justificación</a>
+<a href="#herramientas">Herramientas</a>
+<a href="#instalacion">Instalación</a>
+<a href="#primeros">Primeros pasos</a>
+<a href="#estructura">Estructura del proyecto</a>
+<a href="#aplicación">Primera aplicación</a>
+<a href="#app">Aplicación de ejemplo</a>
+<a href="#conclusion">Conclusión</a>
+
+</nav>
+
+<section id="introduccion">
+<h2>Introducción</h2>
+<p>
+En el desarrollo web moderno existen diferentes herramientas que permiten crear interfaces dinámicas e interactivas. Una de las tecnologías más utilizadas actualmente es React, una biblioteca de JavaScript desarrollada por Meta que permite construir aplicaciones web mediante componentes reutilizables.
+
+React facilita la creación de interfaces complejas al dividir la aplicación en pequeñas partes llamadas componentes, lo que mejora la organización del código y facilita su mantenimiento.
+
+En este tutorial se explica paso a paso cómo instalar las herramientas necesarias para trabajar con React, cómo crear un proyecto utilizando Vite y cómo desarrollar una aplicación sencilla. Como ejemplo práctico se desarrollará una aplicación de lista de tareas que permite agregar y eliminar elementos.
+
+El objetivo de este tutorial es proporcionar una guía clara para comprender los pasos básicos necesarios para comenzar a desarrollar aplicaciones con React.
+</p>
+</section>
+
+<section id="objetivo">
+
+<h2>Objetivo del tutorial</h2>
+
+<p>
+El objetivo de este tutorial es explicar paso a paso cómo comenzar a trabajar con React, desde la instalación del entorno de desarrollo hasta la creación de una pequeña aplicación funcional.
+</p>
+
+<p>
+A lo largo del tutorial se describen los pasos necesarios para instalar Node.js, crear un proyecto utilizando Vite, comprender la estructura básica de un proyecto React y modificar los archivos principales de la aplicación.
+</p>
+
+<p>
+Como ejemplo práctico se desarrolla una aplicación sencilla de lista de tareas que permite agregar y eliminar elementos. Este ejemplo permite comprender cómo funcionan los componentes de React y cómo se pueden crear interfaces interactivas utilizando JavaScript.
+</p>
+
+</section>
+
+<section id="justificacion">
+<h2>Justificación del framework</h2>
+
+<h3>¿Para qué sirve React?</h3>
+<p>React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas. Permite desarrollar aplicaciones web modernas mediante componentes reutilizables, lo que facilita la organización del código y el mantenimiento de los proyectos.</p>
+
+<h3>¿Qué aplicaciones tiene?</h3>
+<p>React se utiliza en una gran variedad de aplicaciones web modernas, como:
+<ul>
+<li>Paneles administrativos</li>
+
+<li>Redes sociales</li>
+
+<li>Sistemas de gestión</li>
+
+<li>Aplicaciones de comercio electrónico</li>
+
+<li>Interfaces interactivas</li>
+</ul>
+</p>
+
+<h3>¿Sobre qué lenguajes se apoya?</h3>
+<p>
+React utiliza principalmente:
+<ul>
+<li>JavaScript</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+También utiliza JSX, que permite escribir código similar a HTML dentro de JavaScript.
+</p>
+
+<h3>¿Qué prerrequisitos necesita?</h3>
+<p>
+Para trabajar con React se necesitan:
+<ul>
+
+<li>Node.js instalado</li>
+
+<li>npm (gestor de paquetes)</li>
+
+<li>Un editor de código como Visual Studio Code</li>
+
+<li>Conocimientos básicos de HTML, CSS y JavaScript</li>
+</ul>
+</p>
+
+</section>
+
+<section id="herramientas">
+
+<h2>Herramientas utilizadas</h2>
+
+<p>
+Para desarrollar este proyecto se utilizaron varias herramientas que permiten crear aplicaciones web modernas utilizando React.
+</p>
+
+<ul>
+
+<li>
+<strong>Node.js:</strong> entorno de ejecución que permite ejecutar JavaScript fuera del navegador y utilizar herramientas como npm.
+</li>
+
+<li>
+<strong>npm:</strong> gestor de paquetes que permite instalar dependencias necesarias para el proyecto.
+</li>
+
+<li>
+<strong>Vite:</strong> herramienta que facilita la creación y ejecución de proyectos React de forma rápida y sencilla.
+</li>
+
+<li>
+<strong>React:</strong> biblioteca de JavaScript utilizada para construir interfaces de usuario mediante componentes reutilizables.
+</li>
+
+<li>
+<strong>Visual Studio Code:</strong> editor de código utilizado para escribir y modificar los archivos del proyecto.
+</li>
+
+</ul>
+
+</section>
+
+<section id="instalacion">
+<h2>Instalación</h2>
+
+<p>
+Para comenzar a trabajar con React es necesario instalar Node.js y contar con un editor de código, preferentemente Visual Studio Code. Node.js permite ejecutar JavaScript fuera del navegador y utilizar npm para instalar las dependencias necesarias del proyecto.
+</p>
+
+<h3>Paso 1: Descargar Node.js</h3>
+
+<p>
+Se accede a la página oficial de Node.js y se descarga la versión LTS recomendada para el sistema operativo.
+</p>
+
+<img src="img/dowlandnode.png" width="700">
+
+<h3>Paso 2: Verificación de la instalación</h3>
+
+<p>
+Una vez finalizada la instalación, es necesario verificar que Node.js y npm se hayan instalado correctamente.
+</p>
+
+<p>
+Para ello se abre la terminal del sistema (CMD) y se ejecutan los siguientes comandos:
+</p>
+
+<pre>
+node -v
+npm -v
+</pre>
+
+<img src="img/cmdnode.png" width="700">
+
+<p>
+Estos comandos muestran las versiones instaladas de Node.js y npm. Si aparecen números de versión, significa que la instalación se realizó correctamente.
+</p>
+
+<p>
+El objetivo de estos primeros pasos no es crear la aplicación todavía, sino asegurarnos de que el entorno de desarrollo está preparado para trabajar con React.
+</p>
+
+</section>
+
+<section id="primeros">
+
+<h2>Paso 3: Creación del proyecto React</h2>
+
+<p>
+En la misma terminal (CMD) se ejecuta el siguiente comando:
+</p>
+
+<pre>
+npm create vite@latest
+</pre>
+
+<p>
+Este comando crea un nuevo proyecto utilizando Vite. Durante el proceso de configuración se selecciona el framework React y la variante JavaScript.
+</p>
+
+<p>
+Durante la configuración aparecerán varias opciones, pero en este caso se seleccionaron las siguientes:
+</p>
+
+<ul>
+<li>Nombre del proyecto: tutorial-react</li>
+<li>Framework: React</li>
+<li>Variant: JavaScript</li>
+</ul>
+
+<p>
+Después de crear el proyecto es necesario entrar a la carpeta generada ejecutando el siguiente comando:
+</p>
+
+<pre>
+cd tutorial-react
+</pre>
+
+<p>
+Luego se instalan las dependencias necesarias del proyecto:
+</p>
+
+<pre>
+npm install
+</pre>
+
+<p>
+Finalmente se ejecuta la aplicación con el siguiente comando:
+</p>
+
+<pre>
+npm run dev
+</pre>
+
+<p>
+La terminal mostrará una dirección similar a la siguiente:
+</p>
+
+<pre>
+Local: http://localhost:5173/
+</pre>
+
+<img src="img/cmd install 1.png" width="700">
+<img src="img/cmd install 2.png" width="700">
+
+<p>
+Copiamos esta dirección en el navegador y, si todos los pasos se realizaron correctamente, podremos ver la primera aplicación de React funcionando.
+</p>
+
+<p>
+En esta pantalla inicial se puede observar el logo de React, el logo de Vite y un botón contador.
+</p>
+
+<img src="img/web read confirmation.png" width="700">
+
+</section>
+
+<section id="aplicación">
+
+<h2>Primera Aplicación</h2>
+
+<p>
+Ahora se abre el proyecto en Visual Studio Code para comenzar a modificar el código.
+</p>
+
+<p>
+Para hacerlo se realizan los siguientes pasos:
+</p>
+
+<ul>
+<li>Abrir Visual Studio Code.</li>
+<li>Seleccionar File → Open Folder.</li>
+<li>Buscar la carpeta tutorial-react.</li>
+<li>Abrir la carpeta.</li>
+</ul>
+
+<p>
+Dentro de la carpeta <strong>src</strong> se encuentran los archivos principales del proyecto:
+</p>
+
+<ul>
+<li>App.jsx</li>
+<li>main.jsx</li>
+<li>index.css</li>
+</ul>
+
+<p>
+Se abre el archivo <strong>src/App.jsx</strong>, se elimina el código inicial y se reemplaza por un ejemplo sencillo de "Hola Mundo".
+</p>
+
+<img src="img/VS hola mundo.png" width="700">
+
+<h3>Hola Mundo</h3>
+
+<p>
+Después de guardar los cambios, el navegador se actualiza automáticamente y se muestra el mensaje en pantalla.
+</p>
+
+<img src="img/hola mundo con react web.png" width="700">
+
+</section>
+
+<section id="app">
+
+<h2>Aplicación de ejemplo: Lista de tareas</h2>
+
+<p>
+Como ejemplo práctico se desarrolló una aplicación sencilla de lista de tareas. Esta aplicación permite al usuario escribir una tarea, agregarla a una lista y eliminarla cuando ya no sea necesaria.
+</p>
+
+<p>
+Para ello se modificó nuevamente el archivo <strong>App.jsx</strong>, eliminando el código del "Hola Mundo" y agregando el nuevo código de la aplicación.
+</p>
+
+<img src="img/listatareascodigo.png" width="700">
+
+<p>
+Después de guardar los cambios, la aplicación se actualiza automáticamente en el navegador.
+</p>
+
+<p>
+El resultado es una interfaz donde el usuario puede escribir tareas, agregarlas a la lista y eliminarlas mediante un botón.
+</p>
+
+<img src="img/lista tareas react web.png" width="700">
+
+</section>
+
+<section id="conclusion">
+
+<h2>Conclusiones</h2>
+
+<p>
+React es una herramienta muy útil para el desarrollo de aplicaciones web modernas. Gracias al uso de componentes y al manejo del estado es posible crear interfaces dinámicas de manera organizada y eficiente.
+</p>
+
+<p>
+A través de este tutorial se aprendió a preparar el entorno de desarrollo, instalar las herramientas necesarias, crear un proyecto con React y desarrollar una aplicación funcional.
+</p>
+
+<p>
+Además, se pudo comprender la estructura básica de un proyecto React y cómo los componentes permiten construir aplicaciones de forma modular y reutilizable.
+</p>
+
+</section>
+
+<section id="referencias">
+
+<h2>Referencias</h2>
+
+<ul>
+
+<li>Documentación oficial de React: https://react.dev</li>
+
+<li>Documentación de Vite: https://vitejs.dev</li>
+
+<li>Node.js: https://nodejs.org</li>
+
+<li>FreeCodeCamp: Aprende Next.js desde cero</li>
+
+</ul>
+
+</section>
+
+</body>
+</html>
